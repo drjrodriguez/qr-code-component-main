@@ -12,10 +12,21 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit&display=swap"
+      rel="stylesheet"
+    />
+
     <title>QR code solution using Flex</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
+      /* @font-face {
+        font-family: Outfit;
+        src: url(https://fonts.google.com/specimen/Outfit);
+      } */
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -26,7 +37,7 @@
 
       .modal-backdrop {
         position: absolute;
-        background-color: rgba(151, 189, 211, 0.51);
+        background-color: hsl(212, 45%, 89%);
         border-radius: 5px;
         top: 5%;
         left: 5%;
@@ -36,7 +47,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: rgba(128, 128, 128, 0.245) 5px 5px;
+        box-shadow: rgba(128, 128, 128, 0.245) 5px 5px 5px;
       }
       .modal {
         background-color: white;
@@ -47,7 +58,7 @@
         padding: 1rem;
         width: 230px;
         min-width: 230px;
-        font-family: sans-serif;
+        font-family: Outfit;
       }
 
       .qr {
@@ -60,13 +71,14 @@
       }
 
       .bold {
-        font-weight: bolder;
-        font-size: large;
+        font-weight: 700;
+        font-size: 15px;
       }
 
       .small-text {
-        color: rgb(157, 155, 155);
+        color: hsl(220, 15%, 55%);
         font-size: small;
+        font-weight: 400;
       }
     </style>
   </head>
